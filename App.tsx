@@ -1,11 +1,17 @@
 import * as React from 'react';
+import { Child } from './Child';
+import { Container } from './Container';
 import './style.css';
+
+import { FlexCenter } from './FlexBox/FlexBox';
 
 export default function App() {
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
+    <Container>
+      <FlexCenter>
+        <Child>Child 1</Child>
+        <Child>Child 2</Child>
+      </FlexCenter>
+    </Container>
   );
 }
